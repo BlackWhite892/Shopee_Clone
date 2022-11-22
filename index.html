@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/857742036e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Shopee</title>
+</head>
+<body>
+    <div class="header">
+        <!-- navbar part -->
+        <div class="nav">
+            <div class="nav--left">
+                <div class="nav--left__qr nav-item">Your chanel
+                    <div class="float-qr">
+                        <img class="float-qr__img" src="images/QR-icon.png">
+                        <div class="float-qr__apps">
+                            <img class="float-qr__apps__img" src="images/google_play-icon.png">
+                            <img class="float-qr__apps__img" src="images/app_store-icon.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="nav--left__babel nav-item">Connect</div>
+                <a class="nav--left__icon nav-item" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="nav--left__icon nav-item" href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <div class="nav--right">
+                <div class="nav--right__notification-container nav-item">
+                    <a class="nav--right__notification " href="#">
+                        <i class="fa-regular fa-bell"></i>Notification
+                    </a>
+                    <div class="float-notice">
+                        <p class="float-notice__header">
+                            New notification received
+                        </p>
+                        <ul class="float-notice__lists">
+                            <li class="notice-lists--list">
+                                <img class="notice-lists--list__img" alt="product" src="images/product-1.jfif">
+                                <div class="notice-lists--list__content">
+                                    <h4 class="notice-lists--list__content__header">
+                                        Ohai chính thức ra mắt dòng son lì mới THE FIRST GENITURE LIPSTICK
+                                    </h4>
+                                    <span class="notice-lists--list__content__text">
+                                        Một làn môi căng mềm, quyến rũ với sắc màu nổi bật
+                                        luôn là điều mà các quý cô ao ước.
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="notice-lists--list">
+                                <img class="notice-lists--list__img" alt="product" src="images/product-1.jfif">
+                                <div class="notice-lists--list__content">
+                                    <h4 class="notice-lists--list__content__header">
+                                        Ohai chính thức ra mắt dòng son lì mới THE FIRST GENITURE LIPSTICK
+                                    </h4>
+                                    <span class="notice-lists--list__content__text">
+                                        Một làn môi căng mềm, quyến rũ với sắc màu nổi bật
+                                        luôn là điều mà các quý cô ao ước.
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="notice-lists--list">
+                                <img class="notice-lists--list__img" alt="product" src="images/product-1.jfif">
+                                <div class="notice-lists--list__content">
+                                    <h4 class="notice-lists--list__content__header">
+                                        Ohai chính thức ra mắt dòng son lì mới THE FIRST GENITURE LIPSTICK
+                                    </h4>
+                                    <span class="notice-lists--list__content__text">
+                                        Một làn môi căng mềm, quyến rũ với sắc màu nổi bật
+                                        luôn là điều mà các quý cô ao ước.
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="float-notice__footer">
+                            <a href="#" class="float-notice__footer-link" style="color:black">See All</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav--right__help nav-item" href="#">
+                    <i class="fa-regular fa-circle-question"></i></i>Need Help?
+                </a>
+                <div class="nav--right__account-container nav-item">
+                    <a class="nav--right__account " href="#">
+                        <i class="fa-regular fa-user"></i>
+                        Your account
+                    </a>
+                    <div class="float-account">
+                        <ul class="float-account--lists">
+                            <li class="account-lists--list">My Account</li>
+                            <li class="account-lists--list">My Address</li>
+                            <li class="account-lists--list">Bills</li>
+                            <li class="account-lists--list">Log Out</li>
+                        </ul>
+                    </div>
+                </div>            
+            </div>
+        </div>
+
+        <!-- search part -->
+        <div class="search">
+            <div class="search--branch">
+                <img src="images/shopee-icon.png" alt="Shopee-branch" class="search--branch__icon">
+                <p class="search--branch__babel">SHOPEE</p>
+            </div>
+            <div class="search--form">
+                <input type="text" name="search" id="search--form__input" 
+                placeholder="enter the items you want to find">
+                <div class="search--form__select">
+                    <a href="#" id="search--form__select--link">
+                        internal shop<i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="float__select">
+                        <ul class="float__select--lists">
+                            <li class="float__select--lists__list">Internal shop</li>
+                            <li class="float__select--lists__list">External shop</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button id="search--form__btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div id="search--cart">
+                <div id="search--cart-wrap">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="search--cart-wrap__quantity">3</span>
+                    <div class="float__cart">
+                        <div class="float__cart-title">added product</div>
+                        <div class="float__cart-item">
+                            <img src="images/product-1.jfif" alt="product" class="float__cart-item--img">
+                            <div class="float__cart-item--info">
+                                <div class="info__header">
+                                    <span class="info__header-name">Kathie Lip Tint Love </span>
+                                    <div class="info__header-price">2.000.000d </div>
+                                    <span class="info__header-number">x 2</span>
+                                </div>
+                                <div class="info__body">
+                                    <span class="info__body-type">Type : sliver</span>
+                                    <span class="info__body-remove">remove</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float__cart-item">
+                            <img src="images/product-1.jfif" alt="product" class="float__cart-item--img">
+                            <div class="float__cart-item--info">
+                                <div class="info__header">
+                                    <span class="info__header-name">Kathie Lip Tint Love </span>
+                                    <div class="info__header-price">2.000.000d </div>
+                                    <span class="info__header-number">x 2</span>
+                                </div>
+                                <div class="info__body">
+                                    <span class="info__body-type">Type : sliver</span>
+                                    <span class="info__body-remove">remove</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float__cart-item">
+                            <img src="images/product-1.jfif" alt="product" class="float__cart-item--img">
+                            <div class="float__cart-item--info">
+                                <div class="info__header">
+                                    <span class="info__header-name">Kathie Lip Tint Love </span>
+                                    <div class="info__header-price">2.000.000d </div>
+                                    <span class="info__header-number">x 2</span>
+                                </div>
+                                <div class="info__body">
+                                    <span class="info__body-type">Type : sliver</span>
+                                    <span class="info__body-remove">remove</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float__cart-item">
+                            <img src="images/product-1.jfif" alt="product" class="float__cart-item--img">
+                            <div class="float__cart-item--info">
+                                <div class="info__header">
+                                    <span class="info__header-name">Kathie Lip Tint Love </span>
+                                    <div class="info__header-price">2.000.000d </div>
+                                    <span class="info__header-number">x 2</span>
+                                </div>
+                                <div class="info__body">
+                                    <span class="info__body-type">Type : sliver</span>
+                                    <span class="info__body-remove">remove</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float__cart-btn">
+                            <button class="float__cart-btn__btn">Watch your cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- search mobile -->
+        <div class="search-mobile-container">
+            <div class="search-mobile">
+                <label class="search-mobile--btn" for="form-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="float__form-mobile" id="form-mobile">
+                        <input type="text" class="float__form-mobile--input" placeholder="enter the items you want to find">
+                        <div class="float__form-mobile--select">
+                            <a href="#" id="float__form-mobile--select__link">
+                                internal shop<i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <div class="float__select-mobile">
+                                <ul class="float__select-mobile--lists">
+                                    <li class="float__select-mobile-lists__list">Internal shop</li>
+                                    <li class="float__select-mobile-lists__list">External shop</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="float__form-mobile--btn">
+                            <button id="float__form-mobile--btn__item">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                </label>
+                
+                <div class="search-mobile--branch">
+                    <img src="images/shopee-icon.png" alt="Shopee-branch" class="search-mobile--branch__icon">
+                    <p class="search-mobile--branch__babel">SHOPEE</p>
+                </div>
+                <div class="search-mobile--cart">
+                    <div id="search-mobile--cart-wrap">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="search-mobile--cart-wrap__quantity">3</span>
+                        <div class="float__cart-mobile">
+                            <div class="float__cart-title">added product</div>
+                            <div class="float__cart-item">
+                                <img src="images/product-1.jfif" alt="product" class="float__cart-item--img">
+                                <div class="float__cart-item--info">
+                                    <div class="info__header">
+                                        <span class="info__header-name">Kathie Lip Tint Love </span>
+                                        <div class="info__header-price">2.000.000d </div>
+                                        <span class="info__header-number">x 2</span>
+                                    </div>
+                                    <div class="info__body">
+                                        <span class="info__body-type">Type : sliver</span>
+                                        <span class="info__body-remove">remove</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="float__cart-item">
+                                <img src="images/product-1.jfif" alt="product" class="float__cart-item--img">
+                                <div class="float__cart-item--info">
+                                    <div class="info__header">
+                                        <span class="info__header-name">Kathie Lip Tint Love </span>
+                                        <div class="info__header-price">2.000.000d </div>
+                                        <span class="info__header-number">x 2</span>
+                                    </div>
+                                    <div class="info__body">
+                                        <span class="info__body-type">Type : sliver</span>
+                                        <span class="info__body-remove">remove</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="float__cart-item">
+                                <img src="images/product-1.jfif" alt="product" class="float__cart-item--img">
+                                <div class="float__cart-item--info">
+                                    <div class="info__header">
+                                        <span class="info__header-name">Kathie Lip Tint Love </span>
+                                        <div class="info__header-price">2.000.000d </div>
+                                        <span class="info__header-number">x 2</span>
+                                    </div>
+                                    <div class="info__body">
+                                        <span class="info__body-type">Type : sliver</span>
+                                        <span class="info__body-remove">remove</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="float__cart-item">
+                                <img src="images/product-1.jfif" alt="product" class="float__cart-item--img">
+                                <div class="float__cart-item--info">
+                                    <div class="info__header">
+                                        <span class="info__header-name">Kathie Lip Tint Love </span>
+                                        <div class="info__header-price">2.000.000d </div>
+                                        <span class="info__header-number">x 2</span>
+                                    </div>
+                                    <div class="info__body">
+                                        <span class="info__body-type">Type : sliver</span>
+                                        <span class="info__body-remove">remove</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="float__cart-btn">
+                                <button class="float__cart-btn__btn">Watch your cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+    <div class="body">
+        <div class="body-container">
+            <div class="mobile-search-bar">
+                <a href="#" class="mobile-search-bar__order"> New products</a>
+                <a href="#" class="mobile-search-bar__order">Relate to </a>
+                <a href="#" class="mobile-search-bar__order">Order by name</a>
+                <a href="#" class="mobile-search-bar__order">Order by prices</a>
+            </div>
+            <nav class="side-bar col-19">
+                <div class="side-bar--title">CATEGORIES</div>
+                <a href="#" class="side-bar-item">Cosmetic</a>
+                <a href="#" class="side-bar-item">Clothes</a>
+                <a href="#" class="side-bar-item">Electronic devices</a>
+                <a href="#" class="side-bar-item">Medicines</a>
+            </nav>
+            <div class="products col-80">
+                <div class="mobile-categories">
+                    <button class="mobile-categories__btn" style="background-color:rgb(247, 113, 113)">Cosmetic</button>
+                    <button class="mobile-categories__btn" style="background-color:rgb(113, 247, 236)">Clothes</button>
+                    <button class="mobile-categories__btn" style="background-color:rgb(247, 205, 113)">Electronic Devices</button>
+                    <button class="mobile-categories__btn" style="background-color:rgb(155, 113, 247)">Medicines</button>
+                </div>
+                <nav class="products--nav">
+                        <a href="#" class="products--nav-link">Sort by</a>
+                        <button class="products--nav-btn btn">Popular</button>
+                        <button class="products--nav-btn btn">Lates</button>
+                        <button class="products--nav-btn btn">Best seller</button>
+                        <div class="products--nav-select" href="#">
+                            Prices<i class="fa-solid fa-caret-down"></i>
+                            <div class="float__order">
+                                <span class="float__order-des">Price:Sort by descending order</span>
+                                <span class="float__order-as">Price:Sort by ascending order</span>
+                            </div>
+                        </div>
+                    <div class="products--nav-pages">
+                        <span class="products--nav-pages__number"><span style="color:var(--main-color)">1</span>/14</span>
+                        <button class="products--nav-btn moving-left"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="products--nav-btn moving-right"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </nav>
+                <div class="products-container">
+                    <div class="product-container">
+                        <div class="product">
+                            <div class="product__img">
+                                <div class="product__img-favorite">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Best sell</span>
+                                </div>
+                                <div class="product__img-sale">
+                                    <span class="product__img-sale__percent">42%</span>
+                                    <span class="product__img-sale__babel">SALE OFF</span>
+                                </div>
+                            </div>
+                            <p class="product__name">Kathie Lip Tint Love Kat'ha Cosmetics ...</p>
+                            <p class="product__price"><span>1.200.000đ</span>999.000đ</p>
+                            <div class="product__info">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="product__info-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>888 sold</p>
+                            </div>
+                            <div class="product__origin">
+                                <p>Beauty group </p>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product">
+                            <div class="product__img">
+                                <div class="product__img-favorite">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Best sell</span>
+                                </div>
+                                <div class="product__img-sale">
+                                    <span class="product__img-sale__percent">42%</span>
+                                    <span class="product__img-sale__babel">SALE OFF</span>
+                                </div>
+                            </div>
+                            <p class="product__name">Kathie Lip Tint Love Kat'ha Cosmetics ...</p>
+                            <p class="product__price"><span>1.200.000đ</span>999.000đ</p>
+                            <div class="product__info">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="product__info-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>888 sold</p>
+                            </div>
+                            <div class="product__origin">
+                                <p>Beauty group </p>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product">
+                            <div class="product__img">
+                                <div class="product__img-favorite">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Best sell</span>
+                                </div>
+                                <div class="product__img-sale">
+                                    <span class="product__img-sale__percent">42%</span>
+                                    <span class="product__img-sale__babel">SALE OFF</span>
+                                </div>
+                            </div>
+                            <p class="product__name">Kathie Lip Tint Love Kat'ha Cosmetics ...</p>
+                            <p class="product__price"><span>1.200.000đ</span>999.000đ</p>
+                            <div class="product__info">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="product__info-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>888 sold</p>
+                            </div>
+                            <div class="product__origin">
+                                <p>Beauty group </p>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product">
+                            <div class="product__img">
+                                <div class="product__img-favorite">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Best sell</span>
+                                </div>
+                                <div class="product__img-sale">
+                                    <span class="product__img-sale__percent">42%</span>
+                                    <span class="product__img-sale__babel">SALE OFF</span>
+                                </div>
+                            </div>
+                            <p class="product__name">Kathie Lip Tint Love Kat'ha Cosmetics ...</p>
+                            <p class="product__price"><span>1.200.000đ</span>999.000đ</p>
+                            <div class="product__info">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="product__info-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>888 sold</p>
+                            </div>
+                            <div class="product__origin">
+                                <p>Beauty group </p>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product">
+                            <div class="product__img">
+                                <div class="product__img-favorite">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Best sell</span>
+                                </div>
+                                <div class="product__img-sale">
+                                    <span class="product__img-sale__percent">42%</span>
+                                    <span class="product__img-sale__babel">SALE OFF</span>
+                                </div>
+                            </div>
+                            <p class="product__name">Kathie Lip Tint Love Kat'ha Cosmetics ...</p>
+                            <p class="product__price"><span>1.200.000đ</span>999.000đ</p>
+                            <div class="product__info">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="product__info-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>888 sold</p>
+                            </div>
+                            <div class="product__origin">
+                                <p>Beauty group </p>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product">
+                            <div class="product__img">
+                                <div class="product__img-favorite">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Best sell</span>
+                                </div>
+                                <div class="product__img-sale">
+                                    <span class="product__img-sale__percent">42%</span>
+                                    <span class="product__img-sale__babel">SALE OFF</span>
+                                </div>
+                            </div>
+                            <p class="product__name">Kathie Lip Tint Love Kat'ha Cosmetics ...</p>
+                            <p class="product__price"><span>1.200.000đ</span>999.000đ</p>
+                            <div class="product__info">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="product__info-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>888 sold</p>
+                            </div>
+                            <div class="product__origin">
+                                <p>Beauty group </p>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product">
+                            <div class="product__img">
+                                <div class="product__img-favorite">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Best sell</span>
+                                </div>
+                                <div class="product__img-sale">
+                                    <span class="product__img-sale__percent">42%</span>
+                                    <span class="product__img-sale__babel">SALE OFF</span>
+                                </div>
+                            </div>
+                            <p class="product__name">Kathie Lip Tint Love Kat'ha Cosmetics ...</p>
+                            <p class="product__price"><span>1.200.000đ</span>999.000đ</p>
+                            <div class="product__info">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="product__info-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>888 sold</p>
+                            </div>
+                            <div class="product__origin">
+                                <p>Beauty group </p>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product">
+                            <div class="product__img">
+                                <div class="product__img-favorite">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Best sell</span>
+                                </div>
+                                <div class="product__img-sale">
+                                    <span class="product__img-sale__percent">42%</span>
+                                    <span class="product__img-sale__babel">SALE OFF</span>
+                                </div>
+                            </div>
+                            <p class="product__name">Kathie Lip Tint Love Kat'ha Cosmetics ...</p>
+                            <p class="product__price"><span>1.200.000đ</span>999.000đ</p>
+                            <div class="product__info">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="product__info-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>888 sold</p>
+                            </div>
+                            <div class="product__origin">
+                                <p>Beauty group </p>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product">
+                            <div class="product__img">
+                                <div class="product__img-favorite">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Best sell</span>
+                                </div>
+                                <div class="product__img-sale">
+                                    <span class="product__img-sale__percent">42%</span>
+                                    <span class="product__img-sale__babel">SALE OFF</span>
+                                </div>
+                            </div>
+                            <p class="product__name">Kathie Lip Tint Love Kat'ha Cosmetics ...</p>
+                            <p class="product__price"><span>1.200.000đ</span>999.000đ</p>
+                            <div class="product__info">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="product__info-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>888 sold</p>
+                            </div>
+                            <div class="product__origin">
+                                <p>Beauty group </p>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product">
+                            <div class="product__img">
+                                <div class="product__img-favorite">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Best sell</span>
+                                </div>
+                                <div class="product__img-sale">
+                                    <span class="product__img-sale__percent">42%</span>
+                                    <span class="product__img-sale__babel">SALE OFF</span>
+                                </div>
+                            </div>
+                            <p class="product__name">Kathie Lip Tint Love Kat'ha Cosmetics ...</p>
+                            <p class="product__price"><span>1.200.000đ</span>999.000đ</p>
+                            <div class="product__info">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="product__info-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>888 sold</p>
+                            </div>
+                            <div class="product__origin">
+                                <p>Beauty group </p>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products--pagination">
+                    <a href="#" class="products--pagination__link"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#" class="products--pagination__link">1</a>
+                    <a href="#" class="products--pagination__link">2</a>
+                    <a href="#" class="products--pagination__link">3</a>
+                    <a href="#" class="products--pagination__link">4</a>
+                    <a href="#" class="products--pagination__link">5</a>
+                    <a href="#" class="products--pagination__link">...</a>
+                    <a href="#" class="products--pagination__link">10</a>
+                    <a href="#" class="products--pagination__link"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-lists">
+            <div class="footer-lists--list">
+                <h2 class="footer-lists--list__title">CUSTOMERS SERVICE</h2>
+                <div class="footer-lists--list__item"><a href >Help Center</a></div>
+                <div class="footer-lists--list__item"><a href >Shop Mall</a></div>
+                <div class="footer-lists--list__item"><a href >Shopping guide</a></div>
+            </div>
+            <div class="footer-lists--list">
+                <h2 class="footer-lists--list__title">INTRODUCTION</h2>
+                <div class="footer-lists--list__item"><a href >Introduce</a></div>
+                <div class="footer-lists--list__item"><a href >Recruit</a></div>
+                <div class="footer-lists--list__item"><a href >Shopping Rules</a></div>
+            </div>
+            <div class="footer-lists--list">
+                <h2 class="footer-lists--list__title">CATEGORY</h2>
+                <div class="footer-lists--list__item"><a href >Cosmetic</a></div>
+                <div class="footer-lists--list__item"><a href >Clothes</a></div>
+                <div class="footer-lists--list__item"><a href >Electronic Devices</a></div>
+            </div>
+            <div class="footer-lists--list">
+                <h2 class="footer-lists--list__title">FOLLOW</h2>
+                <div class="footer-lists--list__item">
+                    <a href ><i class="fa-brands fa-facebook"></i>Facebook</a>
+                </div>
+                <div class="footer-lists--list__item">
+                    <a href><i class="fa-brands fa-instagram"></i>Instagram</a>
+                </div>
+                <div class="footer-lists--list__item">
+                    <a href><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+                </div>
+            </div>
+            <div class="footer-lists--list">
+                <h2 class="footer-lists--list__title">GO TO THE APP STORE</h2>
+                <div class="footer-lists--download">
+                    <img src="images/QR-icon.png" alt="QR" class="footer-lists--download__qr">
+                    <div class="footer-lists--download-apps">
+                        <a href="" class="download-apps__link">
+                            <img src="images/google_play-icon.png" alt="" class="download-apps__app">
+                        </a>
+                        <a href="" class="download-apps__link">
+                            <img src="images/app_store-icon.png" alt="" class="download-apps__app">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer--cite">
+            <p class="footer--cite__text">© 2022 - Bản quyền thuộc về Công ty Ralph</p>
+        </div>
+    </div>
+</body>
+</html>

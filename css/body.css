@@ -1,0 +1,51 @@
+@import url("side-bar.css");
+@import url("products.css");
+
+.body-container{
+    display: block;
+    margin: 36px var(--margin-side); 
+}
+.mobile-search-bar{
+    text-align: center;
+    display: none;
+}
+.mobile-search-bar__order{
+    padding: 20px;
+    width: 25%;
+    text-decoration: none;
+    color:black;
+    font-size: 1.4rem;
+    position: relative;
+}
+.mobile-search-bar__order::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 60%;
+    border-left: 1px solid #e5e5e5;
+    transform: translateY(-50%);
+}
+.mobile-categories{
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+.mobile-categories__btn{
+    width: 140px;
+    height:40px;
+    color:var(--white-text-color);
+    font-family: var(--header-text-font);
+    border:none;
+    font-size: 1.2rem;
+    overflow-x: auto;
+}
+.col-19{
+    width:19%;
+    float: left;
+}
+.col-80{
+    width:80%;
+    float: right;
+}

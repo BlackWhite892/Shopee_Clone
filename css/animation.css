@@ -1,0 +1,114 @@
+/* Header */
+
+/* navbar */
+.nav-item:hover,.nav--right__notification:hover,.nav--right__account:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+.nav--left__qr:hover .float-qr{
+    width: 200px;
+    display: flex;
+    animation: fadeIn ease-in 0.3s;
+}
+.nav--right__notification-container:hover .float-notice{
+    width:400px;
+    display: block;
+    animation: fadeIn ease-in 0.1s;
+}
+.notice-lists--list:hover{
+    background-color: var(--main-color-hover);
+}
+.nav--right__account-container:hover .float-account{
+    width:120px;
+    display: block;
+    animation: fadeIn ease-in 0.1s ;
+}
+.account-lists--list:hover{
+    background-color: var(--main-color-hover);
+}
+
+/* search bar */
+.search--form__select:hover .float__select {
+    width: 100%;
+    display: block;
+    animation: fadeIn ease-in 0.1s;
+}
+#search--cart-wrap:hover .float__cart{
+    width:400px;
+    animation: fadeIn ease-in 0.1s;
+}
+#search--form__btn:hover,.float__cart-item:hover,.float__cart-btn__btn:hover{
+    background-color: var(--main-color-hover);
+}
+.search-mobile--btn:hover .float__form-mobile{
+    width:100%;
+    display: flex;
+}
+.float__select-mobile-lists__list:hover{
+    background-color: var(--main-color-hover);
+}
+#float__form-mobile--btn__item:hover{
+    background-color: var(--main-color-hover);
+}
+#search-mobile--cart-wrap:hover .float__cart-mobile{
+    width:100%;
+    animation: fadeIn ease-in 0.1s;
+}
+.float__select--lists__list:hover{
+    background-color: var(--main-color-hover);
+}
+
+/* Body */
+
+.mobile-categories__btn:active{
+    opacity: 0.8;
+}
+
+/* side bar */
+.side-bar a:hover,.side-bar a:focus{
+    color:var(--main-color);
+}
+
+/* products */
+.products--nav-btn:hover,.products--nav-btn:focus{
+    background-color: var(--main-color);
+    color:var(--white-text-color);
+}
+.products--nav-select:hover .float__order{
+    width:100%;
+    display: flex;
+}
+.float__order-des:hover,.float__order-as:hover{
+    background-color: var(--main-color-hover);
+}
+
+/* product */
+.product-container:hover{
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    transition: transform ease-in 0.1s;
+    transform: translateY(-2px);
+}
+.fa-heart:hover{
+    color:red;
+}
+.fa-star:hover{
+    color:rgb(255, 174, 25);
+}
+
+
+/* pagination */
+.products--pagination__link:focus{
+    background-color: var(--main-color);
+    color:var(--header-text-color);
+    opacity: 1;
+}
+
+/* footer */
+.footer-lists--list__item:hover a{
+    color:var(--main-color);
+    opacity: 1;
+}
+
+@keyframes fadeIn{
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}

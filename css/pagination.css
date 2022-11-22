@@ -1,0 +1,22 @@
+.products--pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 48px 0 32px 0;
+    width:100%;
+}
+.products--pagination__link{
+    font-weight: 300;
+    font-size: 2rem;
+    --height: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    min-width:50px;
+    opacity: 0.6;
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
