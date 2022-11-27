@@ -146,24 +146,102 @@
     z-index: 1;
 }
 .modal__body{
-    width:300px;
+    width:500px;
     height:400px;
     background-color: white;
     margin: auto;
     z-index: 2;
 }
 .modal__container{
-    margin: 20px 50px;
+    margin: 20px 30px;
 }
 .form-header{
     display: flex;
     justify-content: space-between;
 }
-.form-header__login{
+.form-header__register{
     color:black !important;
     font-size: 1.6rem;
 }
-.form-header__register{
+.form-header__login{
     color:var(--main-color) !important;
     font-size: 1.4rem ;
+}
+.form-body{
+    margin: 50px 0 20px 0;
+}
+.form-body__username,.form-body__password{
+    width:100%;
+    padding:5px;
+    margin:10px 0;
+}
+.form-body__checkbox{
+    margin:0;
+}
+.agree-register{
+    color:black;
+    margin:10px 0 70px 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.link-register{
+    color:var(--main-color) !important;
+}
+.form-body__btn{
+    display: flex;
+    justify-content: end;
+    font-family: var(--header-text-font);
+}
+.exit-btn{
+    min-width:100px;
+    height:30px;
+    background-color: transparent;
+    border:none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.register-btn{
+    min-width:100px;
+    height:30px;
+    margin-left: 5px;
+    background-color: var(--main-color);
+    border:none;
+    color:var(--white-text-color); 
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.form-footer{
+    background-color: rgb(224, 224, 224);
+    height:50px;
+    display: flex;
+}
+.form-footer__btn{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    align-items: center;
+}
+.cnt-fb-btn{
+    background-color:rgb(27, 27, 245);
+    color:var(--white-text-color);
+    border: none;
+    height:30px;
+    min-width: 200px;
+    cursor: pointer;
+}
+.cnt-gg-btn{
+    background-color: white;
+    border: none;
+    height:30px;
+    min-width: 200px;
+    cursor: pointer;
+}
+.cnt-gg-btn i{
+    background-image: linear-gradient(to top, violet, indigo, blue, green, yellow, orange, red);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.cnt-fb-btn:hover,.cnt-gg-btn:hover,.register-btn:hover,.exit-btn:hover{
+    opacity: 0.6;
 }
